@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dash-head">
+    <i class="fa fa-users"></i><h3> Users Details</h3>
+</div>
+ <table class="productinfo table">
+     <tr>
+         <th>User ID</th>
+         <th>User Name</th>
+         <th>User Email</th>
+         <th>User Mob.</th>
+         <th>Added Date</th>
+     </tr>
+     {% if userd %}
+     {% for i in userd %}
+     <tr>
+         <td>{{i.user.id}}</td>
+         <td>{{i.name}}</td>
+         <td>{{i.email}}</td>
+         <td>{{i.phone}}</td>
+         <td>13/11/2021</td>
+     </tr>
+     {% endfor %}
+     {% else %}
+     <tr>
+         <td colspan="4">No Data items</td>
+     </tr>
+     {% endif %}
+ </table>
+ {% endblock content %}

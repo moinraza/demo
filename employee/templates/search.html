@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dash-head">
+    <i class="fa fa-user"></i><h3> Search Details</h3>
+</div>
+ <table class="productinfo table">
+     <tr>
+         <th>Employee ID</th>
+         <th>Employee Name</th>
+         <th>Employee Email</th>
+         <th>Employee Mob.</th>
+         <th>Employee Gender</th>
+         <th>Added Date</th>
+         <th>Action</th>
+     </tr>
+     {% if emps %}
+     {% for i in emps %}
+     <tr>
+         <td>{{i.id}}</td>
+         <td>{{i.name}}</td>
+         <td>{{i.email}}</td>
+         <td>{{i.phone}}</td>
+         <td>{{i.gender}}</td>
+         <td>{{i.added_date}}</td>
+         <td>
+             <form action="{% url 'UpdateEmployeeForm' %}" method="POST" class="d-inline">
+                {% csrf_token %}
+                <input hidden type="text" value="{{i.id}}" name="empid">
+                <button type="submit" value="Edit" class="btn btn-warning">Edit</button>
+            </form>
+             <form action="{% url 'RemoveEmployee' %}" method="POST" class="d-inline">
+                 {% csrf_token %}
+                 <input hidden type="text" value="{{i.id}}" name="empid">
+                 <input type="submit" value="Delete" class="btn btn-danger">
+             </form>
+            </td>
+     </tr>
+     {% endfor %}
+     {% else %}
+     <tr>
+        <td colspan="7"><h5> Not Found Search item</h5></td>
+     </tr>
+     {% endif %}
+ </table>
+ {% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="dash-head">
+            <i class="fa fa-home"></i><h3>/ Dashboard</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="{% url 'AllUserDetails' %}" style="text-decoration: none; color: white;"><div class="img-box"><i class="fa fa-users"> &nbsp {{userd}}</i><p>Total Users</p></div></a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'AllEmployeeDetails' %}" style="text-decoration: none; color: white;"><div class="img-box"><i class="fa fa-user">  &nbsp {{empd}}</i><p>Total  Employee</p></div></a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'AddEmployeeForm' %}" style="text-decoration: none;"><div class="img-box2"><i class="fa fa-plus"> </i><p>Add  Employee</p></div></a>
+            </div>
+        </div>
+{% endblock content %}

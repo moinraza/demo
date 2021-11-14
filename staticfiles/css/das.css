@@ -1,0 +1,264 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+#navbar{
+    background-color:#486DE6;
+    display: flex;
+    padding: 8px;    
+}
+#navbar .nav_left{
+    width: 20%;
+}
+#navbar .nav_left h4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-left: 15px;
+}
+#navbar .nav_center{
+  width: 60%;
+  text-align: center;
+}
+#navbar .nav_center input{
+  width: 250px;
+  height: 38px;
+  border: none;
+  border-radius: 16px;
+  padding-left: 15px;
+}
+#navbar .nav_center button{
+  width: 50px;
+  height: 38px;
+  border: none;
+  background-color: white;
+  border-radius: 16px;
+  padding-left: 5px;
+}
+
+#navbar .nav_right{
+  width: 20%;
+  text-align: center;  
+}
+#navbar .nav_right i{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+#conatiner{
+    display: flex;
+    padding: 5px;
+    border-radius: 6px;
+}
+#conatiner .cont_left{
+   background-color: #486DE6;
+   width: 170px;
+   margin-top: 1px;
+   border-radius: 6px;
+}
+#conatiner  .cont_right{
+  background-color: white;
+  width: 900px;
+  margin-top: 1px;
+  border-radius: 6px;
+}
+#conatiner .cont_left .user-cont{
+    background-color: #486DE6;
+    width: 100%;
+    text-align: center;
+    margin-top: 3px;
+}
+#conatiner .cont_left  .user-cont i{
+    font-size: 40px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 200;
+}
+#conatiner .cont_left  .user-cont p{
+    font-size: 18px;
+    color: white;
+    margin-top: 5px;
+}
+#conatiner .cont_left hr{
+  color: #fff;
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+  background-color: white;
+}
+#conatiner .cont_left  .das-item{
+    text-align: left;
+}
+#conatiner .cont_left .das-item li{
+    overflow: hidden;
+    color: white;
+    font-size: 20px;
+    margin-left: -10px;
+}
+ul li i{
+    margin-top: 35px;
+}
+#conatiner .cont_right .dash-head{
+    display: flex;
+}
+#conatiner .cont_right  .dash-head h3{
+    color: #486DE6;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#conatiner .cont_right .dash-head i{
+    margin-top: 25px;
+    font-size: 25px;
+    margin-left: 20px;
+    color: #486DE6;
+}
+
+#conatiner .cont_right .img-box{
+    height: 150px;
+    width: 200px; 
+    background-color: #486DE6;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+#conatiner .cont_right .img-box i{
+    font-size: 35px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#conatiner .cont_right .img-box p{
+    font-size: 22px;
+    color:  white;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+#conatiner .cont_right .img-box a{
+    text-decoration: none;
+    color: white;
+}
+#conatiner .cont_right .img-box2{
+  height: 150px;
+  width: 200px; 
+  margin-top: 10px;
+  border-radius: 8px;
+}
+#conatiner .cont_right .img-box2 i{
+  font-size: 40px;
+  color: #486DE6;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+#conatiner .cont_right .img-box2 p{
+  font-size: 20px;
+  color:  #486DE6;
+  margin-left: 35px;
+  text-transform: capitalize;
+}
+#conatiner .cont_right .img-box2 a{
+  text-decoration: none;
+  color: #486DE6;
+}
+#conatiner .cont_right .row{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.footer{
+    background-color:#486DE6;
+    padding: 3px;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 8px;
+
+}
+/* sign up Page */
+.form-cont{
+    height: 300px;
+    width: 100px;
+
+}
+/* Product Form Css */
+.AddProduct{
+    text-align: center;
+}
+.productinfo{
+ margin-top: 20px;
+ border:  1px solid black;
+ text-align: center;
+ margin-left: 15px;
+}
+.productinfo tr th{
+    border: 1px solid white;
+    background-color: #486DE6;
+    color: white;
+}
+.productinfo tr td{
+    border:  1px solid #486DE6;
+}
+.dash-head button{
+    margin-top: 20px;
+    margin-left: 700px;
+    border: none;
+    background-color: #486DE6;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.dash-head button i{
+    margin-top: 0px;
+    margin-left: -3px;
+    color: white;
+}
+.AddProduct{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #486DE6;
+    padding: 25px;
+    text-align: left;
+}
+.AddProduct h2{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
+}
+.AddProduct label{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.AddProduct input{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 5px;
+}
+.AddProduct textarea{
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 5px;
+}
+.AddProduct input[type="submit"]{
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 30px;
+    border: none;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
