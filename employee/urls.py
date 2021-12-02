@@ -11,5 +11,6 @@ urlpatterns = [
      path('allemployeedetail', views.empview, name="AllEmployeeDetails"),
      path('removeemployee', views.removeemp, name="RemoveEmployee"),
      path('userdetail', views.userview, name="AllUserDetails"),
-     path('searchdetails', views.search, name="Searchpage")
+     path('searchdetails', views.search, name="Searchpage"),
+     path('exportcsv', views.export_csv, name="export_csv"),
 ]

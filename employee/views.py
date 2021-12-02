@@ -3,8 +3,10 @@ from django.contrib.auth.models import User
 from employee.models import *
 from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages
-from django.http.response import HttpResponseRedirect
+from django.http.response import HttpResponse, HttpResponseRedirect
 from django.db.models import Q
+import datetime
+import csv
 
 
 
@@ -111,3 +113,14 @@ def search(request):
         search = request.POST.get('search')
         emps = Employee.objects.filter(Q(id = search))
     return render(request, 'search.html', {'emps':emps})
+
+def export_csv(request):
+    response = HttpResponse(content_type = 'text/csv')
+    response['Content-Disposition'] = 'attachment; filename=empreport' +\
+       str(datetime.datetime.now())+'.csv'
+    write = csv.writer(response)
+    write.writerow(['Employee ID', 'Employee Name', 'Employee Email', 'Employee Mob.', 'Added Date', 'Gender'])
+    emp = Employee.objects.all()
+    for i in emp:
+        write.writerow([i.id, i.name, i.email, i.phone, i.added_date, i.gender])
+    return  response
